@@ -26,20 +26,27 @@ const Result = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text style={styleTitle}>You {status}!</Text>
+        <Text style={styleTitle} testID="Results-title">
+          You {status}!
+        </Text>
       </View>
       <View>
-        <Text>
+        <Text testID="Results-description">
           You answered {correctAnswers} out of {totalQuestions} correctly
         </Text>
-        <Text>You got {correctPercent}% correct</Text>
-        <Text>Minimum required to pass: {minimumPercent}%</Text>
+        <Text testID="Results-correctPercent">
+          You got {correctPercent}% correct
+        </Text>
+        <Text testID="Results-minimumPercent">
+          Minimum required to pass: {minimumPercent}%
+        </Text>
       </View>
       <Button
         text="Try again"
         pressFunction={goToStart}
         buttonColor={COLORS.darkPurple}
         textColor={COLORS.white}
+        testID="Results-buttonHome"
       />
     </SafeAreaView>
   );

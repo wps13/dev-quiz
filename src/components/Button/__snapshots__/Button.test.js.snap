@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render correctly 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "borderRadius": 5,
+        "margin": 10,
+        "maxWidth": "85%",
+        "minWidth": 120,
+        "padding": 10,
+        "shadowColor": "#2AC062",
+        "shadowOffset": Object {
+          "height": 10,
+          "width": 0,
+        },
+        "shadowOpacity": 0.4,
+        "shadowRadius": 20,
+      },
+      Object {
+        "backgroundColor": "#333",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "#FFF",
+        },
+      ]
+    }
+  >
+    Start
+  </Text>
+</ForwardRef>
+`;

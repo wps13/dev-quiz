@@ -23,7 +23,7 @@ describe('Question reducer', () => {
         answerText: 'p',
       },
     };
-    expect(reducer(state, action)).toEqual({
+    expect(reducer(action, state)).toEqual({
       currentQuestion: 1,
       answers: [
         {
@@ -62,7 +62,7 @@ describe('Question reducer', () => {
       type: 'RESET_DATA',
     };
 
-    expect(reducer(state, action)).toEqual({
+    expect(reducer(action, state)).toEqual({
       currentQuestion: 0,
       answers: [],
       actualQuestion: questions[0],
@@ -76,5 +76,22 @@ describe('Question reducer', () => {
       status: '',
       allQuestions: questions,
     });
+  });
+  it('default case', () => {
+    const state = {
+      allQuestions: questions,
+      currentQuestion: 0,
+      answers: [],
+      actualQuestion: questions[0],
+      actualQuestionId: 1,
+      lastQuestion: false,
+      totalQuestions: questions.length,
+      correctAnswers: 0,
+      minimumPercent: 75,
+      correctPercent: 0,
+      remainingQuestions: questions.length - 1,
+      status: '',
+    };
+    expect(reducer('DELETE', state)).toEqual(state);
   });
 });

@@ -51,7 +51,9 @@ const Question = ({navigation}) => {
             />
           </View>
           <View>
-            <Text>Remaining questions: {questions.remainingQuestions} </Text>
+            <Text testID="Question-RemainingValue">
+              Remaining questions: {questions.remainingQuestions}
+            </Text>
           </View>
         </SafeAreaView>
       )}

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render correctly 1`] = `
+<ForwardRef(SafeAreaView)
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "margin": 10,
+        },
+        Object {
+          "fontSize": 28,
+          "fontWeight": "700",
+        },
+      ]
+    }
+  >
+    DevQuiz
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "margin": 10,
+        },
+        Object {
+          "textAlign": "center",
+          "width": "50%",
+        },
+      ]
+    }
+  >
+    Test your knowledge about development
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "margin": 40,
+        "width": "100%",
+      }
+    }
+  >
+    <Button
+      buttonColor="#A093F1"
+      pressFunction={[Function]}
+      testID="Home-ButtonQuestion"
+      text="Start"
+      textColor="#fff"
+    />
+    <Button
+      buttonColor="#E7E4F9"
+      pressFunction={[Function]}
+      testID="Home-ButtonInstructions"
+      text="Instructions"
+      textColor="#302929"
+    />
+  </View>
+</ForwardRef(SafeAreaView)>
+`;

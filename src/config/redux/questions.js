@@ -28,7 +28,7 @@ const INITIAL_STATE = {
   status: '',
 };
 
-const questionReducer = (state = INITIAL_STATE, action) => {
+const questionReducer = (action, state = INITIAL_STATE) => {
   switch (action.type) {
     case ADD_ANSWER:
       let newAnswers = state.answers.concat({

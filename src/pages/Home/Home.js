@@ -18,12 +18,14 @@ const Home = ({navigation}) => {
           text="Start"
           pressFunction={() => navigation.navigate('Question')}
           textColor={COLORS.white}
+          testID="Home-ButtonQuestion"
         />
         <ButtonGeneric
           buttonColor={COLORS.lightPurple}
           text="Instructions"
           pressFunction={() => navigation.navigate('Instructions')}
           textColor={COLORS.darkGrey}
+          testID="Home-ButtonInstructions"
         />
       </View>
     </SafeAreaView>

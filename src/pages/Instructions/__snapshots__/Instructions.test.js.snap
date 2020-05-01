@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Instructions should render correctly 1`] = `
+<ForwardRef(SafeAreaView)
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 22,
+        "fontWeight": "700",
+        "margin": 5,
+      }
+    }
+  >
+    How to play
+  </Text>
+  <Text
+    style={
+      Object {
+        "margin": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    To Play this quiz, you should press the 'start' button and select the answer that you think that is correct
+  </Text>
+</ForwardRef(SafeAreaView)>
+`;
