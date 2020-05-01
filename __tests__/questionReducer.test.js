@@ -23,7 +23,7 @@ describe('Question reducer', () => {
         answerText: 'p',
       },
     };
-    expect(reducer(action, state)).toEqual({
+    expect(reducer(state, action)).toEqual({
       currentQuestion: 1,
       answers: [
         {
@@ -62,7 +62,7 @@ describe('Question reducer', () => {
       type: 'RESET_DATA',
     };
 
-    expect(reducer(action, state)).toEqual({
+    expect(reducer(state, action)).toEqual({
       currentQuestion: 0,
       answers: [],
       actualQuestion: questions[0],
@@ -92,6 +92,6 @@ describe('Question reducer', () => {
       remainingQuestions: questions.length - 1,
       status: '',
     };
-    expect(reducer('DELETE', state)).toEqual(state);
+    expect(reducer(state, 'DELETE')).toEqual(state);
   });
 });
