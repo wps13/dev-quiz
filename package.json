@@ -22,7 +22,7 @@
     "react-native-gesture-handler": "^1.7.0",
     "react-native-reanimated": "^1.9.0",
     "react-native-safe-area-context": "^0.7.2",
-    "react-native-screens": "^2.9.0",
+    "react-native-screens": "^2.10.1",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5",
     "snyk": "^1.366.2"
